@@ -1,23 +1,20 @@
 import "./Card.css";
+// import CPImage from "./CPImage";
+import CPContent from "./CPContent";
+import CPInfo from "./CPInfo";
+
+// 컴포넌트의 함수이름의 시작은 대문자로 컴포넌트를 뜻하는 CP 붙이고 단수로 적기
+// function CPImage, function CPContent, function CPInfo
 export default function Card() {
+   const topics = [{ topics: "제목" }];
+   const bodies = [{ bodies: "어쩌구저쩌구" }];
+   const userID = [{ userID: "aa" }];
+   const id = [{ id: "bb" }];
    return (
-      <div className="Card">
-         {/* <img src="" alt="" /> */}
-         <div>이미지</div>
-
-         <article className="content">
-            <title>[번역]최악의 개발자</title>
-            <p>
-               언제쯤 수업을 따라갈 수 있다는 것인가. 무슨 내용인지 도무지...{" "}
-            </p>
-            <p>2025 04 03</p>
-            <p>댓글</p>
-         </article>
-
-         <div className="info">
-            <p>by gompro</p>
-            <p>like</p>
-         </div>
+      <div>
+         {/* <CPImage images={images} /> */}
+         <CPContent topics={topics} bodies={bodies} />
+         <CPInfo userID={userID} id={id} />
       </div>
    );
 }

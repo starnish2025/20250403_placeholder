@@ -4,9 +4,7 @@ import Card from "./Card";
 function App() {
    return (
       <div>
-         <Card title="first" />
-         <Card title="second" />
-         <Card title="third" />
+         <Card />
       </div>
    );
 }
