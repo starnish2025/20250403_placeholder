@@ -4,7 +4,7 @@ export default function CPInfo(props) {
    return (
       <div className="info">
          <p>
-            {userID} {id}
+            {props.userID} {id}
          </p>
       </div>
    );
